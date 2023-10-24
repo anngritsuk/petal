@@ -1,8 +1,8 @@
 %text {
     font-size: 16px;
-    font-family: "MK NOVA",sans-serif;
-    line-height: 1rem;
+    font-family: "HK NOVA",sans-serif;
     font-weight: 600;
+    line-height: 1em;
 }
 .header {
     width: 100%;
@@ -22,9 +22,6 @@
         display: flex;
         
         &-menu {
-            &__logo {
-            }
-            
             &__item {
                 @extend %text;
                 padding: 30px 16px 25px;
