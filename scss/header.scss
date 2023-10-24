@@ -1,0 +1,64 @@
+%text {
+    font-size: 16px;
+    font-family: "MK NOVA",sans-serif;
+    line-height: 1rem;
+    font-weight: 600;
+}
+.header {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 1000;
+    height:71px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    .header-navigation {
+        align-items: center;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        display: flex;
+        
+        &-menu {
+            &__logo {
+            }
+            
+            &__item {
+                @extend %text;
+                padding: 30px 16px 25px;
+                text-decoration: none;
+                color: inherit;
+                
+                
+            }
+        }
+        &-buttons {
+            display: flex;
+            align-items: center;
+            &__login {
+                @extend %text;
+                padding: 30px 16px 25px;
+                text-decoration: none;
+                color: inherit;
+            }
+            &__apply {
+                color: #fff;
+                background-color: #000;
+                justify-content: center;
+                align-items: center;
+                padding: 12px 24px;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-decoration: none;
+                transition: all .3s;
+                display: flex;
+            }
+        }
+    }
+}
+
+
+

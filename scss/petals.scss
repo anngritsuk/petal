@@ -1,0 +1,154 @@
+*{
+    font-family: "MK NOVA", sans-serif;
+    box-sizing: border-box;
+}
+
+%button-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 86%;
+
+  background-color: #fff;
+  border: 1px solid #000;
+  padding: 26px 24px;
+
+  font-size: 16px;
+  font-family: "MK NOVA", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in;
+
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+h4{
+    font-size: 12px;
+    color: #1F1D1DB8;
+
+}
+
+h3{
+    font-size: 14px;
+    color: #1f1d1d
+}
+
+p{
+    color: #1F1D1DB8;
+}
+
+%h5{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "MK NOVA", sans-serif;
+    color: #1f1d1d;
+}
+
+
+.section-petals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f7f7f7;
+  padding: 96px 30px;
+
+  .container-petals {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    .section-petals-text {
+      text-align: center;
+
+      &__comment {
+        font-size: 18px;
+        color: #1F1D1DB8;
+      }
+      &__title {
+        font-size: 28px;
+      }
+    }
+    .container-petals-blocks {
+      display: flex;
+      justify-content: space-between;
+
+      width: 100%;
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #fff;
+        width: 32%;
+        padding: 0 10px;
+        &-info {
+          display: flex;
+          justify-content: space-between;
+          padding: 24px 48px;
+          width: 100%;
+          &-text {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;;
+            padding-right: 8px;
+            &__title {
+                
+            }
+            &__comment {
+              
+            }
+          }
+          &__icon {
+            max-width: 88px;
+            width: 100%;
+          }
+        }
+        .card-list {
+          display: flex;
+          flex-direction: column;
+          &-item {
+            width: 100%;
+            display: flex;
+            padding: 16px 40px;
+            &__icon {
+              margin-right: 16px;
+            }
+            .card-list-item-text {
+
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              &__titles {
+              }
+              &__comment {
+                @extend %h5;
+              }
+            }
+          }
+
+        }
+        &__button {
+            margin: 20px 36px;
+            @extend %button-style;
+          }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
